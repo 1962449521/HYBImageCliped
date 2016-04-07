@@ -90,6 +90,17 @@
 @implementation WHUCornerMaker
 
 #pragma mark 提供调用接口
++ (BOOL) isCorneredAtView:(UIView *)view {
+    __block BOOL isCornered;
+    [view.subviews enumerateObjectsUsingBlock:^(__kindof UIView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        if ([obj isKindOfClass:[WHUCornerImageView class]]) {
+            isCornered = YES;
+            *stop = YES;
+        }
+    }];
+    return isCornered;
+}
+
 - (void) roundView:(UIView *) view withCornerRadius:(CGFloat) radius defaultColor:( UIColor * _Nullable)defaultcolor byRoundingCorners:(UIRectCorner)corners {
     [[view subviews] enumerateObjectsUsingBlock:^( UIView *  obj, NSUInteger idx, BOOL *  stop) {
         if ( [obj isKindOfClass:[WHUCornerImageView class]]) {

@@ -10,6 +10,8 @@
 
 @interface WHUCornerMaker : NSObject
 
++ (BOOL) isCorneredAtView:(UIView * _Nonnull)view;
+
 // 优先选取view 沿superview上的父类容器的背景色， 如果一直为nil, 则取defaultColor 作为圆角颜色
 
 - (void) roundView:( UIView * _Nonnull ) view withCornerRadius:(CGFloat) radius defaultColor:( UIColor * _Nullable)color;

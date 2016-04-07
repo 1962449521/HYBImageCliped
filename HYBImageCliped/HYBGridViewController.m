@@ -87,7 +87,10 @@ static NSString *cellIdentifier = @"gridcellidentifier";
                                                                          forIndexPath:indexPath];
   HYBGridModel *model = self.datasource[indexPath.item];
   [cell configCellWithModel:model];
-  [cornerMaker roundView:cell.imageView withCornerRadius:12.0 defaultColor:[UIColor blackColor]];
+    
+    if (![WHUCornerMaker isCorneredAtView:cell.imageView]) {
+        [cornerMaker roundView:cell.imageView withCornerRadius:12.0 defaultColor:[UIColor blackColor]];
+    }
 
   return cell;
 }
