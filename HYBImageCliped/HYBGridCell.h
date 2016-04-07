@@ -12,6 +12,8 @@
 
 @interface HYBGridCell : UICollectionViewCell
 
+@property (nonatomic, strong) UIImageView *imageView;
+
 - (void)configCellWithModel:(HYBGridModel *)model;
 
 @end

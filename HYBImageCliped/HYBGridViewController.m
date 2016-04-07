@@ -9,6 +9,8 @@
 #import "HYBGridViewController.h"
 #import "HYBGridCell.h"
 #import "HYBGridModel.h"
+#import "WHUCornerMaker.h"
+
 
 #define kScreenWidth ([UIScreen mainScreen].bounds.size.width)
 
@@ -21,11 +23,15 @@ static NSString *cellIdentifier = @"gridcellidentifier";
 
 @end
 
-@implementation HYBGridViewController
+@implementation HYBGridViewController {
+    WHUCornerMaker *cornerMaker;
+}
+
 
 - (void)viewDidLoad {
   [super viewDidLoad];
-  
+    cornerMaker = [[WHUCornerMaker alloc] init];
+
   UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
   layout.itemSize = CGSizeMake((kScreenWidth - 30) / 2, (kScreenWidth - 30) / 2 + 20);
   layout.minimumLineSpacing = 10;
@@ -81,7 +87,8 @@ static NSString *cellIdentifier = @"gridcellidentifier";
                                                                          forIndexPath:indexPath];
   HYBGridModel *model = self.datasource[indexPath.item];
   [cell configCellWithModel:model];
-  
+  [cornerMaker roundView:cell.imageView withCornerRadius:12.0 defaultColor:[UIColor blackColor]];
+
   return cell;
 }
 

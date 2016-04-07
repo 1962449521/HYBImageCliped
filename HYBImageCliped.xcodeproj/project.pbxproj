@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		432A6CD11CB6DBFF00518E35 /* WHUCornerMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 432A6CD01CB6DBFF00518E35 /* WHUCornerMaker.m */; };
+		432A6CD71CB6E13A00518E35 /* WHUBorderMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 432A6CD61CB6E13A00518E35 /* WHUBorderMaker.m */; };
 		690CA6921CAD196D00E2F50B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 690CA6911CAD196D00E2F50B /* main.m */; };
 		690CA6951CAD196D00E2F50B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 690CA6941CAD196D00E2F50B /* AppDelegate.m */; };
 		690CA6981CAD196D00E2F50B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 690CA6971CAD196D00E2F50B /* ViewController.m */; };
@@ -151,6 +153,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		432A6CCF1CB6DBFF00518E35 /* WHUCornerMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHUCornerMaker.h; sourceTree = "<group>"; };
+		432A6CD01CB6DBFF00518E35 /* WHUCornerMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHUCornerMaker.m; sourceTree = "<group>"; };
+		432A6CD51CB6E13A00518E35 /* WHUBorderMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHUBorderMaker.h; sourceTree = "<group>"; };
+		432A6CD61CB6E13A00518E35 /* WHUBorderMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHUBorderMaker.m; sourceTree = "<group>"; };
 		690CA68D1CAD196D00E2F50B /* HYBImageCliped.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HYBImageCliped.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		690CA6911CAD196D00E2F50B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		690CA6931CAD196D00E2F50B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -292,6 +298,10 @@
 		690CA6841CAD196C00E2F50B = {
 			isa = PBXGroup;
 			children = (
+				432A6CCF1CB6DBFF00518E35 /* WHUCornerMaker.h */,
+				432A6CD01CB6DBFF00518E35 /* WHUCornerMaker.m */,
+				432A6CD51CB6E13A00518E35 /* WHUBorderMaker.h */,
+				432A6CD61CB6E13A00518E35 /* WHUBorderMaker.m */,
 				690CA6B51CAD1A1600E2F50B /* Sources */,
 				690CA68F1CAD196D00E2F50B /* HYBImageCliped */,
 				690CA6A91CAD196D00E2F50B /* HYBImageClipedTests */,
@@ -647,12 +657,14 @@
 				690DC6781CAD723C003F2201 /* Demo1Controller.m in Sources */,
 				693880D01CAFDC2D00956618 /* HYBImageClipedManager.m in Sources */,
 				693880751CAF6B0500956618 /* UIImage+MultiFormat.m in Sources */,
+				432A6CD71CB6E13A00518E35 /* WHUBorderMaker.m in Sources */,
 				690CA6951CAD196D00E2F50B /* AppDelegate.m in Sources */,
 				693880671CAF6B0500956618 /* SDWebImageDecoder.m in Sources */,
 				690DC6971CAD7268003F2201 /* MASCompositeConstraint.m in Sources */,
 				6938807B1CAF6B0500956618 /* UIImageView+WebCache.m in Sources */,
 				690DC69B1CAD7268003F2201 /* MASConstraintMaker.m in Sources */,
 				690DC6A71CAD7268003F2201 /* View+MASAdditions.m in Sources */,
+				432A6CD11CB6DBFF00518E35 /* WHUCornerMaker.m in Sources */,
 				693880611CAF6B0500956618 /* NSData+ImageContentType.m in Sources */,
 				693880691CAF6B0500956618 /* SDWebImageDownloader.m in Sources */,
 				690DC69D1CAD7268003F2201 /* MASLayoutConstraint.m in Sources */,
