@@ -181,7 +181,7 @@
     
     if (![self.cornerPool objectForKey:key]) {
         UIImage *img;
-        radius *= [UIScreen mainScreen].scale;
+        radius *= [UIScreen mainScreen].scale ;
         CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
         CGContextRef contextRef = CGBitmapContextCreate(NULL, radius, radius, 8, 4 * radius, colorSpace, kCGBitmapByteOrderDefault | kCGImageAlphaPremultipliedFirst);
         
@@ -216,10 +216,10 @@
         UIImage *cornerImage = [self p_cornerWithColor:color radius:radius];
         CGImageRef imageRef = cornerImage.CGImage;
         
-        UIImage *leftUpImage = [[UIImage alloc] initWithCGImage:imageRef scale:[UIScreen mainScreen].scale orientation:UIImageOrientationRight];
-        UIImage *rightUpImage = [[UIImage alloc] initWithCGImage:imageRef scale:[UIScreen mainScreen].scale orientation:UIImageOrientationLeftMirrored];
-        UIImage *rightDownImage = [[UIImage alloc] initWithCGImage:imageRef scale:[UIScreen mainScreen].scale orientation:UIImageOrientationLeft];
-        UIImage *leftDownImage = [[UIImage alloc] initWithCGImage:imageRef scale:[UIScreen mainScreen].scale orientation:UIImageOrientationRight];;
+        UIImage *leftUpImage = [[UIImage alloc] initWithCGImage:imageRef scale:[UIScreen mainScreen].scale  orientation:UIImageOrientationRight];
+        UIImage *rightUpImage = [[UIImage alloc] initWithCGImage:imageRef scale:[UIScreen mainScreen].scale  orientation:UIImageOrientationLeftMirrored];
+        UIImage *rightDownImage = [[UIImage alloc] initWithCGImage:imageRef scale:[UIScreen mainScreen].scale  orientation:UIImageOrientationLeft];
+        UIImage *leftDownImage = [[UIImage alloc] initWithCGImage:imageRef scale:[UIScreen mainScreen].scale  orientation:UIImageOrientationUp];;
         
         if (leftUpImage && rightUpImage && rightDownImage && leftDownImage) {
             NSArray *cornerRect = @[leftUpImage, rightUpImage, rightDownImage, leftDownImage];
