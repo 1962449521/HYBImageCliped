@@ -157,6 +157,7 @@
 		432A6CD01CB6DBFF00518E35 /* WHUCornerMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHUCornerMaker.m; sourceTree = "<group>"; };
 		432A6CD51CB6E13A00518E35 /* WHUBorderMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHUBorderMaker.h; sourceTree = "<group>"; };
 		432A6CD61CB6E13A00518E35 /* WHUBorderMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHUBorderMaker.m; sourceTree = "<group>"; };
+		43B473921CB98C4E00E885EC /* WHUCornerMaker_purgeCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WHUCornerMaker_purgeCache.h; sourceTree = "<group>"; };
 		690CA68D1CAD196D00E2F50B /* HYBImageCliped.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HYBImageCliped.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		690CA6911CAD196D00E2F50B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		690CA6931CAD196D00E2F50B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -298,6 +299,7 @@
 		690CA6841CAD196C00E2F50B = {
 			isa = PBXGroup;
 			children = (
+				43B473921CB98C4E00E885EC /* WHUCornerMaker_purgeCache.h */,
 				432A6CCF1CB6DBFF00518E35 /* WHUCornerMaker.h */,
 				432A6CD01CB6DBFF00518E35 /* WHUCornerMaker.m */,
 				432A6CD51CB6E13A00518E35 /* WHUBorderMaker.h */,
